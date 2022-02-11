@@ -1,0 +1,58 @@
+.outer {
+    fill: none;
+    stroke: rgba(129, 183, 255, 1);
+    stroke-width: 2;
+    stroke-dasharray: 80 45;
+    stroke-dashoffset: 252;
+}
+
+.inner {
+    fill: none;
+    stroke: rgba(200, 200, 255, 4);
+    stroke-width: 2;
+    stroke-dasharray: 70 45;
+    stroke-dashoffset: 232;
+}
+
+.center{
+    position:fixed;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+
+span {
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:rgb(226, 238, 253);
+    display:block
+}
+
+.flexbox {
+    display: flex;
+    
+}
+
+.outer-spin {
+    animation: rotate 3s linear infinite;
+}
+
+.inner-spin {
+    animation: rotate 4s linear infinite;
+}
+
+.fade-in {
+    animation: fadein 3s linear 1;
+}
+
+@keyframes rotate {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fadein {
+    from {
+        stroke: rgba(128, 145, 177, 0);
+    }
+}
