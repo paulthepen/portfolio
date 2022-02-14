@@ -1,49 +1,51 @@
 const loading = `
     <div class="center">
-        <svg height="100" width="100">
-            <circle class="outer outer-spin" cx="50" cy="53" r="40" />
-            <circle class="inner inner-spin" cx="50" cy="53" r="36" />
+        <svg height="200" width="200">
+            <circle class="outer outer-spin" cx="100" cy="83" r="40">
+
+            </circle>
+            <circle class="inner inner-spin" cx="100" cy="83" r="36"></circle>
             <polygon id="beard" points="
-                25,40 
-                25,65 
-                43,75 
-                57,75 
-                75,65 
-                75,40 
-                65,40 
-                65,55 
-                55,60 
-                45,60 
-                35,55 
-                35,40" 
+                75,70 
+                75,95 
+                93,105 
+                107,105 
+                125,95 
+                125,70 
+                115,70 
+                115,85 
+                105,90 
+                95,90 
+                85,85 
+                85,70" 
                 fill="rgb(128, 145, 177)" />
             <polygon id="moustache" points="
-                65,55
-                53,50
-                47,50
-                35,55
-                35,60
-                47,55
-                53,55
-                65,60"
+                115,85
+                103,80
+                97,80
+                85,85
+                85,90
+                97,85
+                103,85
+                115,90"
             fill="rgb(128, 145, 177)" />
             <polygon id="glasses" points="
-                35,35
-                48,35
-                48,40
-                52,40
-                52,35
-                65,35
-                65,45
-                52,45
-                52,40
-                48,40
-                48,45
-                35,45"
+                85,65
+                98,65
+                98,70
+                102,70
+                102,65
+                115,65
+                115,75
+                102,75
+                102,70
+                98,70
+                98,75
+                85,75"
             fill="none"
             stroke="rgb(128, 145, 177)"
             stroke-width="2px" />
         </svg>
-        <span>Loading</span>
+        <span id="loading-text">Loading</span>
     </div>
 `;

@@ -16,8 +16,8 @@
 
 .center{
     position:fixed;
-    top: calc(50% - 50px);
-    left: calc(50% - 50px);
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
 }
 
 span {
@@ -45,6 +45,10 @@ span {
     animation: fadein 3s linear 1;
 }
 
+.finished {
+    animation: fadeout 1s linear 1;
+}
+
 @keyframes rotate {
     to {
         stroke-dashoffset: 0;
@@ -54,5 +58,11 @@ span {
 @keyframes fadein {
     from {
         stroke: rgba(128, 145, 177, 0);
+    }
+}
+
+@keyframes fadeout {
+    to {
+        color: rgba(256, 256, 256, 0);
     }
 }
