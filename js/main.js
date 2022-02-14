@@ -14,6 +14,14 @@ $(() => {
         $('#loading-text').css('animation', 'fadeout 1s linear 1 forwards');
         setTimeout(() => {
             root.html(title);
+
+            $('.center').on('mouseover', () => {
+                $('.outer').removeClass('fade-in');
+                $('.outer').addClass('outer-spin');
+            });
+            $('.center').on('mouseout', () => {
+                $('.outer').removeClass('pause');
+            })
         }, 2000);
     }, [2000])
 });

@@ -7,6 +7,10 @@
     stroke-dashoffset: 252;
 }
 
+.outer-spin {
+    animation: rotate 8s linear infinite forwards;
+}
+
 .inner {
     --fade-time: 4500ms;
     fill: none;
@@ -14,6 +18,14 @@
     stroke-width: 2;
     stroke-dasharray: 70 45;
     stroke-dashoffset: 232;
+}
+
+.inner-spin {
+    animation: rotate 7s linear infinite forwards;
+}
+
+.pause {
+    animation-play-state: paused;
 }
 
 .center{
