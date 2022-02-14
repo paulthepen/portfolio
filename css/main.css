@@ -1,4 +1,5 @@
 .outer {
+    --fade-time: 4s;
     fill: none;
     stroke: rgba(129, 183, 255, 1);
     stroke-width: 2;
@@ -7,6 +8,7 @@
 }
 
 .inner {
+    --fade-time: 4500ms;
     fill: none;
     stroke: rgba(200, 200, 255, 4);
     stroke-width: 2;
@@ -42,11 +44,43 @@ span {
 }
 
 .fade-in {
-    animation: fadein 3s linear 1;
+    animation: fadein var(--fade-time) linear 1;
 }
 
 .finished {
     animation: fadeout 1s linear 1;
+}
+
+#title-text {
+    --fade-time: 5s;
+    position: fixed;
+    text-align: center;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc(50% - 175px);
+}
+
+#title-text h1{
+    font-family: 'Encode Sans SC', sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    color:rgb(226, 238, 253);
+}
+
+#hero-text {
+    --fade-time: 6s;
+    position: fixed;
+    text-align: center;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc(50% + 50px);
+}
+
+#hero-text h1{
+    font-family: 'Encode Sans SC', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color:rgb(226, 238, 253);
 }
 
 @keyframes rotate {
@@ -57,7 +91,7 @@ span {
 
 @keyframes fadein {
     from {
-        stroke: rgba(128, 145, 177, 0);
+        opacity: 0;
     }
 }
 

@@ -12,6 +12,9 @@ $(() => {
         document.getElementById('animate3').beginElement();
         document.getElementById('animate4').beginElement();
         $('#loading-text').css('animation', 'fadeout 1s linear 1 forwards');
+        setTimeout(() => {
+            root.html(title);
+        }, 2000);
     }, [2000])
 });
 
